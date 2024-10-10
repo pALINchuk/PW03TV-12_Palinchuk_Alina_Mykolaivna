@@ -1,0 +1,108 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:padding="16dp"
+                                                     tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainTitle"
+                android:text="Calculator"
+                style="@style/TitleStyle"
+                android:paddingBottom="8dp"/>
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="вугілля"
+                    android:id="@+id/tabItemCoal"
+            />
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="мазут"
+                    android:id="@+id/tabItemOil"
+            />
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="газ"
+                    android:id="@+id/tabItemGas"
+            />
+        </com.google.android.material.tabs.TabLayout>
+
+        <!--        <androidx.viewpager.widget.ViewPager-->
+        <!--                android:id="@+id/viewPager"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+        <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:padding="16dp">-->
+<!--    -->
+<!--    <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:layout_editor_absoluteX="-51dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/mainTitle"-->
+<!--                android:text="Calculator"-->
+<!--                style="@style/TitleStyle"-->
+<!--        />-->
+<!--        <Button-->
+<!--                android:id="@+id/part_1_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="76dp"-->
+<!--                android:text="Part 1"-->
+<!--                android:visibility="visible"-->
+<!--                tools:visibility="visible"/>-->
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/part_2_button"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="76dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Part 2"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:visibility="visible"&ndash;&gt;-->
+<!--&lt;!&ndash;                tools:visibility="visible"/>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
