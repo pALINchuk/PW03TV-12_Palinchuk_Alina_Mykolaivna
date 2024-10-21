@@ -19,37 +19,42 @@
                 style="@style/TitleStyle"
                 android:paddingBottom="8dp"/>
 
-        <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabLayout"
+        <EditText
+                android:id="@+id/averagePowerInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-            <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="вугілля"
-                    android:id="@+id/tabItemCoal"
-            />
-            <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="мазут"
-                    android:id="@+id/tabItemOil"
-            />
-            <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="газ"
-                    android:id="@+id/tabItemGas"
-            />
-        </com.google.android.material.tabs.TabLayout>
+                android:hint="Середньодобова потужність (мВт)"
+                android:inputType="numberDecimal" />
 
-        <!--        <androidx.viewpager.widget.ViewPager-->
-        <!--                android:id="@+id/viewPager"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="0dp"-->
-        <!--                android:layout_weight="1"-->
-        <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+        <EditText
+                android:id="@+id/stdDeviationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Середньоквадратичне відхилення (мВт)"
+                android:inputType="numberDecimal" />
+
+        <EditText
+                android:id="@+id/сostInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Вартість електроенергії"
+                android:inputType="numberDecimal" />
+
+        <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Розрахувати" />
+
+        <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результат"
+                android:paddingTop="16dp"
+                android:textSize="32dp"
+        />
+
         <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainer"
                 android:layout_width="match_parent"
